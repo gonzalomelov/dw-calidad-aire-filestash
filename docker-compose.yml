@@ -11,3 +11,6 @@ services:
     - DROPBOX_CLIENT_ID=<dropbox_key>
     ports:
     - "8334:8334"
+    network_mode: bridge
+    external_links:
+    - sftp_sftp_1:sftp
