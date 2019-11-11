@@ -15,4 +15,7 @@ services:
     external_links:
     - sftp_sftp_1:sftp
     labels:
-    - traefik.enable=false
+    - traefik.backend=files
+    - traefik.frontend.rule=Host:files.bieccamvd.com
+    - traefik.docker.network=bridge
+    - traefik.port=8334
