@@ -14,3 +14,5 @@ services:
     network_mode: bridge
     external_links:
     - sftp_sftp_1:sftp
+    labels:
+    - traefik.enable=false
